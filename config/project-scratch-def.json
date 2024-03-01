@@ -1,13 +1,47 @@
 {
-  "orgName": "eattabou company",
-  "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "orgName": "Norac",
+  "edition": "Enterprise",
+  "features": ["EnableSetPasswordInApi","EinsteinVisits","ContactsToMultipleAccounts", 
+               "Communities", "B2BCommerce", "OrderManagement",
+               "PlatformCache", "SalesCloudEinstein"
+  ],
   "settings": {
+    "commerceSettings": {
+      "commerceEnabled": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "currencySettings": {
+      "enableMultiCurrency": true
+    },
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench": true,
+      "useLanguageFallback": true,
+      "enableDataTranslation": true
+    },
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "orderManagementSettings": {
+      "enableOrderManagement": true
+    },
+    "orderSettings": {
+      "enableOrders": true,
+      "enableEnhancedCommerceOrders": true,
+      "enableOptionalPricebook": true
+    },
+    "userManagementSettings": {
+      "enableNewProfileUI": true
+    },
+    "securitySettings": {
+      "enableAdminLoginAsAnyUser": true
     }
   }
 }
