@@ -1,0 +1,25 @@
+{
+  "promptOnMissingParentObjects": false,
+  "objects": [
+     
+      {
+           "query": "SELECT Id, Name,Type,Phone FROM Account",
+           "operation": "Upsert",
+           "externalId": "Name"
+      },
+      {
+          "query": "SELECT Id,Name FROM Contact",
+          "operation": "Upsert",
+          "externalId": "Name",
+          "master": false
+     },
+     {
+          "query": "SELECT Id,AccountId,ContactId FROM AccountContactRelation",
+          "operation": "Upsert",
+          "externalId": "AccountId;ContactId"
+      }
+      
+  ]
+ 
+
+}
