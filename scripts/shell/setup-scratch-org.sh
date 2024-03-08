@@ -63,3 +63,4 @@ echo "Publishing site"
 sfdx force:community:publish --name "${STORE_NAME}" -u ${ORG_ALIAS}
 
 echo "Site published"
+sfdx open
